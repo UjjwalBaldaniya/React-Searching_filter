@@ -7,7 +7,6 @@ import Table from './Table'
 const Filter = () => {
 
     const [search, setSearch] = useState('')
-    const [users, setUsers] = useState(user)
     const handleChange = (e) => {
         setSearch(e.target.value)
     }
@@ -27,7 +26,7 @@ const Filter = () => {
                 <input placeholder='Search ...' className='input-search' value={search} onChange={handleChange} />
                 <h2 className='employee'>Employee Details</h2>
 
-                <Table data={aaa(users)} />
+                <Table data={aaa(user)} />
             </div>
         </>
 
